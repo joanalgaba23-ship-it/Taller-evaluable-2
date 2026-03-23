@@ -1,0 +1,39 @@
+\section{Inequacions}
+Resoleu en \LaTeX\ els exercicis següents:
+\begin{enumerate}
+    \item Trobau el conjunt de punts que satisfà la següent inequació
+    \begin{equation}
+        |x-|x-2|| < 3
+    \end{equation}
+    
+    Tenim $|x-|x-2|| < 3 \Leftrightarrow -3 < x - |x-2| < 3$.
+    Aleshores, el conjunt de punts son els de la intersecció que satisfan que $-3 < x - |x-2|$ i $x - |x-2| < 3$. Notem que hem de diferenciar dos casos: $x\geq2$ o $x<2$
+    \begin{enumerate}
+        \item Sigui $x\geq2 \Leftrightarrow x-2\geq0 \Leftrightarrow |x-2| = x-2$.
+        Calculem el conjunt de punts que satisfan $-3 < x - |x-2| \Leftrightarrow -3 < x - (x-2) \Leftrightarrow -3 < 2$ I això és sempre cert. Ara bé, notem que tenim la condició de $x\ge2$. Aleshores, Aquesta inequació la satisfà qualsevol $x\in[2, +\infty) $.\\
+        Ara calculant els punts que satisfan $x - |x-2| < 3 \Leftrightarrow x - (x - 2) < 3 \Leftrightarrow 2 < 3$. Un altre cop això és sempre cert i afegint la condició $x\geq2$ queda que la inequació és certa per a tota $x\in[2, +\infty)$.\\
+        Aplicant la intersecció entre els dos queda que qualsevol $x\in[2, +\infty)$ és solució.
+
+        \item Sigui $x<2 \Leftrightarrow x-2<0 \Leftrightarrow |x-2| = 2-x$.
+        Calculam el conjunt que satisfà $-3<x - |x-2| \Leftrightarrow -3<x-(2-x) \Leftrightarrow -3 < x-2+x \Leftrightarrow -1 < 2x \Leftrightarrow -\frac{1}{2} < x$. Aplicant la condició de què $x<2$ queda que $x\in(-\frac{1}{2}, 2)$.\\
+        Per altra banda, calculant els punts $x - |x-2| < 3 \Leftrightarrow x -(2-x) < 3 \Leftrightarrow x - 2 + x < 3 \Leftrightarrow 2x < 5 \Leftrightarrow x<\frac{5}{2}$. Aplicant la condició queda de que $x<2$ queda que tota $x\in(-\infty, 2)$ és solució.\\
+        Aplicant que el conjunt de solucions és la intersecció dels dos queda que el conjunt de punts és tota $x\in(-\frac{1}{2}, 2)$.
+    \end{enumerate}
+    Sabem que el conjunt de solucions és la unió dels dos casos. Així queda que tots els punts que satisfan la inequació de l'enunciat són totes les $x\in(-\frac{1}{2}, 2) \cup (2, +\infty)$.
+
+    
+    \item Determinau el conjunt de punts que satisfà la següent inequació en funció de $a \in \mathbb{R}$.
+    \begin{equation}
+        x^2-ax \leq 2
+    \end{equation}
+Per facilitar els càlculs, escrivim $x^2-ax-2 \leq 0$. La següent passa és trobar les arrels d'aquesta equació, és a dir, volem veure quan $x^2-ax-2=0$. Usant la formula de l'equació de segon grau, tenim:
+\begin{equation*}
+    x= \frac{-(-a) \pm \sqrt{(-a)^2-4 \cdot 1 \cdot (-2)}}{2 \cdot 1} = \frac{a \pm \sqrt{a^2+8}}{2}
+\end{equation*}
+Notem que el radicand de la fórmula sempre serà positiu, ja que per definicio qualsevol $x \in \mathbb{R}:x^2 \geq 0$, en particular també passarà per $a$
+
+Llavors, tenim que les arrels del nostre polinomi són $(\frac{a-\sqrt{a^2+8}}{2},\frac{a+\sqrt{a^2+8}}{2})$\\
+
+Hem de notar que el valor de $a$ no canvia el nombre de solucions de la nostra equació. De fet, l'únic que canvia és on es situen les nostres arrels, i com el coeficient independent és $-2$, la funció sempre tindrà valors negatius quan agafa valors entre les seves arrels. Per tant, el conjunt de punts que satisfà aquesta equació són els $x \in (\frac{a-\sqrt{a^2+8}}{2},\frac{a+\sqrt{a^2+8}}{2})$
+
+\end{enumerate}
