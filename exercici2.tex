@@ -7,4 +7,16 @@ Demostrau que si $z_1$ i $z_2$ són arrels del polinomi amb coeficients reals $x
 \end{equation}
 Resolem l'equació;
 $\frac{-a \pm\sqrt{a^2-4\cdot1\cdotb}}{2\cdot1}$ llavors; $z_1=\frac{-a+\sqrt{a^2-4b}}{2}$ i $z_2=\frac{-a-\sqrt{a^2-4b}}{2}$\\
-C $-4b\le a^2$ ,sabem que $z_1 \land z_2 \in \mathbb{R} $, i per tant  $z_1 ^n + z_2^n \in \mathbb{R} $. \\Cas $-4b> a^2$ 
+\begin{enumerate}
+    \item Cas $-4b\le a^2$;\\Sabem que $z_1 \land z_2 \in \mathbb{R} $, i per tant  $z_1 ^n + z_2^n \in \mathbb{R} $.
+    \item Cas $-4b> a^2$;
+    $z_1=\frac{-a}{2}+\sqrt{4b-a^2}i$ \land  $z_2=\frac{-a}{2}-\sqrt{4b-a^2}i$.
+    \\ Sabem que $|z_1|=|z_2|$ ja que $\sqrt{(\frac{-a}{2})^2+(\sqrt{4b-a^2})^2}=\sqrt{(\frac{-a}{2})^2+(-\sqrt{4b-a^2})^2}$. A més $\theta_{z_1}=-\theta_{z_2}$, ja que
+    $arcsen(\frac{\sqrt{4b-a^2}}{|z_1|})=-arcsen(\frac{-\sqrt{4b-a^2}}{|z_2|})$.
+    \\ Tenim que $z_1=|z_1|\cdot e^{i\theta} \land z_2=|z_1|\cdot e^{-i\theta}$.Llavors sabem que $z_1 ^n=|z_1|^n\cdot e^{ni\theta} \land z_2 ^n=|z_1|^n\cdot e^{-ni\theta}$.\\ Per la fórmula de Euler tenim que $z_1 ^n=|z_1|\cdot (cos(n\theta)+i\cdot sen(n\theta))) \land   z_2 ^n=|z_1|\cdot (cos(n\theta)+i\cdot sen(n\theta))) }$. \\Llavors $z_1^n+z_2^n= |z_1|^n\cdot (cos(n\theta)+i sen(n\theta))+|z_1|^n\cdot (cos(-n\theta)+i sen(-n\theta))=|z_1|^n\cdot (cos(n\theta)+i sen(n\theta))+|z_1|^n\cdot (cos(n\theta)-i sen(n\theta)) =2\cdot|z_i|^n\cdot cos(n\theta) $.\\Vegem que, per tant $z_1^n+z_2^n \in \mathbb{R}$
+
+    
+    
+\end{enumerate}
+  Resolem ara el cas $x^2-2x+2=0$ amb $-4b>a^2$. Tenim que $z_1=1+\sqrt{2}i \land z_1=1-\sqrt{2}$, transformam i ens queda. $z_1=\sqrt{3}\cdot e^{i\beta} \land z_1=\sqrt{3}\cdot e^{-i\beta}$ on $\beta=arcsen(\frac{\sqrt{2}}{\sqrt{3}})$.
+  Tenim llavors amb la formula general que $z_1^n+z_2^n=2\cdot\sqrt{3}\cdot cos(n\beta)$
